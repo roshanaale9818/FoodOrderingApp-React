@@ -31,10 +31,12 @@ const DUMMY_MEALS = [
 const AvailableMeals = (props) => {
     // <li key={meal.name+Math.random(10)}>{meal.name}</li>
     const mealsList = DUMMY_MEALS.map(meal => <MealItem id={meal.id} key={meal.id} name={meal.name} description={meal.description} price={meal.price} />);
+    console.log(mealsList);
     return <section className={classes.meals}>
         <ul>
             <Card>
                 {
+                    
                     mealsList
                 }
             </Card>
